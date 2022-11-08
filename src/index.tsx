@@ -1,17 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import BalotoCheckout from './pages/balotoCheckout/BalotoCheckout';
-import Navbar from './components/Navbar/NavBar';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import {  RouterProvider } from "react-router-dom";
+import { router } from "./routes/index";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <Navbar />
-    <BalotoCheckout />
+      <RouterProvider router={router} />
   </React.StrictMode>
 );
 

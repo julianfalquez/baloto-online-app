@@ -16,7 +16,7 @@ const numberPickerMap = (numerOfFields: number) => {
         name="number"
         label={index===(numerOfFields-1)?"SuperBall: ":"Numero: "}
         type="number"
-        autoComplete="Numero"
+        autoComplete="number"
         variant="outlined"
       />
     );

@@ -1,4 +1,7 @@
 import { AppBar, Toolbar, Typography } from "@mui/material";
+import { Link, Router, RouterProvider, Routes } from "react-router-dom";
+import { routes } from "../../utils/routeUtils";
+import { router } from "../../routes/index";
 
 const NavBar = () => {
   return (
@@ -12,9 +15,11 @@ const NavBar = () => {
       }}
     >
       <Toolbar>
-        <Typography variant="h6" color="inherit" noWrap>
-          Supper Lotto
-        </Typography>
+        <Link to={routes.MENU}>
+          <Typography variant="h6" color="inherit" noWrap>
+            Supper Lotto
+          </Typography>
+        </Link>
       </Toolbar>
     </AppBar>
   );

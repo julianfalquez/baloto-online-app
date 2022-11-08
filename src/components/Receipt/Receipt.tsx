@@ -1,4 +1,6 @@
 import { Typography } from "@mui/material";
+import { routes } from "../../utils/routeUtils";
+import { NavCheckoutButtons } from "../navCheckoutButtons/NavCheckoutButtons";
 
 export const Receipt = () => {
   return (
@@ -10,6 +12,7 @@ export const Receipt = () => {
         Tu orden con numero a sido creada #2001539. Te enviaremos un email a tu
         cuenta con la factura y el numero de confirmacion.
       </Typography>
+      <NavCheckoutButtons isReceipt navigateBack={routes.MENU} ></NavCheckoutButtons>
     </>
   );
 };
