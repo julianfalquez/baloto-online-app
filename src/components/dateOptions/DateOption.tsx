@@ -18,7 +18,7 @@ export const DateOption: React.FC<Props> = ({ dateType }) => {
     dayjs("2014-08-18T21:11:54")
   );
   return (
-    <>
+    <div style={{display:'flex',flexDirection:'column'}}>
       <FormGroup>
         <div
           style={{
@@ -67,6 +67,6 @@ export const DateOption: React.FC<Props> = ({ dateType }) => {
         navigateNext={routes.RECEIPT}
         navigateBack={routes.MENU}
       />
-    </>
+    </div>
   );
 };

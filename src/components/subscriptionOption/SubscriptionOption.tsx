@@ -13,7 +13,7 @@ import { routes } from "../../utils/routeUtils";
 export const SubscriptionOption: React.FC = () => {
   const { isAutomatic, handleAutomatic } = useAutomatic();
   return (
-    <>
+    <div style={{ display: "flex", flexDirection: "column" }}>
       <FormGroup>
         <div
           style={{
@@ -53,7 +53,7 @@ export const SubscriptionOption: React.FC = () => {
       <NavCheckoutButtons
         navigateNext={routes.RECEIPT}
         navigateBack={routes.MENU}
-      />{" "}
-    </>
+      />
+    </div>
   );
 };

@@ -1,4 +1,4 @@
-import { createBrowserRouter, Outlet } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import BuyMenu from "../components/buyMenu/BuyMenu";
 import { DateOption } from "../components/dateOptions/DateOption";
 import BalotoCheckout from "../pages/balotoCheckout/BalotoCheckout";
